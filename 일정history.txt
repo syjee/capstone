@@ -22,7 +22,10 @@
 
 1/23 - 제안서 수정본 지도교수확인 & 4차 회의
 : Curecoin 블록체인 코드 분석
-: 자바 NTPUDP
+: 자바 NTPUDP - 타임서버로 부터 표준시간 가져오기
+: 자바 RunTime - 시스템 시간 변경
+: 자바 Date,Calendar,currentTimeMills - 시스템 시간 가져오기
+
 : 모듈 - 데이터 출력
 
 1/30 - 5차 회의 예정
