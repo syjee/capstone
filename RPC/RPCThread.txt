@@ -1,0 +1,47 @@
+public class RPCThread extends Thread{
+
+	private Socket socket;
+	
+	//request와 response가 1:1 관계
+	public String request;
+	public String response;
+
+	public RPCThread(Socket socket){
+		this.socket = socket;
+	}
+
+	// server와 client의 communication을 manages
+	public void run(){
+		try{
+			requset = null;
+			response = null;
+			PrintWriter out = new PrinterWriter(socket.getOutputStream(), true);
+			BufferedReader in  = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			String input = "";
+
+			//연결된 소켓으로 부터 request를 받는다
+			/**	<request case>
+			*	getbalance	- response로 balance 정보 전달
+			*	getinfo	- response로 블록체인의 정보 전달
+			*	send	- response로 큐어코인의 거래를 처리
+			*	submittx	- response로 pendingTransactionContainer에 Transaction추가
+			*	submitcert	- response로 새로운 블록을 생성
+			*	gethistory - response로 해당 address의 allTransactions 정보 전달
+			*	getpending - response로 해당 address의 pendingBalance 정보 전달
+			*/
+			while((input = in.readLine()) != null){
+				if(input.equalsIgnoreCase("HELP")){
+					out.println("Commands: "); 
+				}
+				else {
+					request = input;
+					while(response == null){
+						Thread.sleep(25);
+					}					
+					request = null;
+					response = null;
+				}
+			}
+		} catch(Exception e){
+			e.printStackTrace();
+		}
