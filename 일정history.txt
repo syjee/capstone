@@ -25,13 +25,16 @@
 - RPC (request, response)
 - PeerNetwork (Peer,Input,Output)
 
+: 블록체인 구현
+- mining
+- 암호화(메세지 다이제스트)
+
 : 자바 NTPUDP - 타임서버로 부터 표준시간 가져오기
 : 자바 RunTime - 시스템 시간 변경
 : 자바 Date,Calendar,currentTimeMills - 시스템 시간 가져오기
 : 모듈 - 데이터 출력
-: 암호화(메세지 다이제스트)
 
-1/30 - 5차 회의 예정
+1/31 - 5차 회의 예정
 
 2/6 - 6차 회의 예정
 
