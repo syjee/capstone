@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-/** ºí·Ï»ı¼ºÀÚ °ü¸®ÀÚ
- * @author ¼Ò¿µ
- * ºí·ÏÀ» »ı¼ºÇÏ´Â ºí·Ï»ı¼ºÀÚ¸¦ °ü¸®ÇÑ´Ù.
- * ºí·Ï»ı¼ºÀÚ¸¦ »ı¼ºÇÏ°í °¢°¢ ½º·¹µåÀÎ ºí·Ï»ı¼ºÀÚµéÀº ¸¶ÀÌ´×À» ÇÑ´Ù.
+/** ë¸”ë¡ìƒì„±ì ê´€ë¦¬ì
+ * @author ì†Œì˜
+ * ë¸”ë¡ì„ ìƒì„±í•˜ëŠ” ë¸”ë¡ìƒì„±ìë¥¼ ê´€ë¦¬í•œë‹¤.
+ * ë¸”ë¡ìƒì„±ìë¥¼ ìƒì„±í•˜ê³  ê°ê° ìŠ¤ë ˆë“œì¸ ë¸”ë¡ìƒì„±ìë“¤ì€ ë§ˆì´ë‹ì„ í•œë‹¤.
  */
 
 public class BlockGeneratorManager {
@@ -15,7 +15,7 @@ public class BlockGeneratorManager {
 	}
 	
 	public void putRequest(Block previousBlock,String transaction){
-		BlockGenerator temp = new BlockGenerator(-1);
+		BlockGenerator temp;
 		
 		for(int i = 0; i<index; i++){
 			temp = BG.get(i);
@@ -31,7 +31,7 @@ public class BlockGeneratorManager {
 	}
 	
 	public void threadJoin(){
-		BlockGenerator temp = new BlockGenerator(-1);
+		BlockGenerator temp;
 		int i = 0;
 		try {
 			for(i = 0; i<index; i++){
