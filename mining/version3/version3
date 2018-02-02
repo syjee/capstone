@@ -1,0 +1,6 @@
+/** @author 소영 
+* 블록체인의 마이닝을 간단히 구현.
+* BlockGeneratorManager가 BlockGenerator를 관리한다. 
+* BlockGenerator들은 마이닝을 수행하는 채굴자로 Block을 생성한다. 
+* BlockGenerator 스레드들 중 가장 빨리 마이닝한 블록을 블록체인에 추가한다. 
+* 다음은 블록 2개를 생성하는 예시. */
