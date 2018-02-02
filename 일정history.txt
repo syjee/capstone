@@ -43,7 +43,7 @@
 - rpc(response) & broadcast
 - blockchain construction
   - block_queue
-  - blockchain adaptation
+  - block adaptation
   - block certification
 
 : 자바 스레드풀
