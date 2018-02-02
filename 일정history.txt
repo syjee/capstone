@@ -34,8 +34,19 @@
 : 자바 Date,Calendar,currentTimeMills - 시스템 시간 가져오기
 : 모듈 - 데이터 출력
 
-1/31 - 5차 회의 예정
+1/31 - 5차 회의
+: 블록체인 공부 역할 분담
+- 주소, 개인키
+- 소켓 통신(피어 네트워크)
+- rpc(request)
+- mining
+- rpc(response) & broadcast
+- blockchain construction
+  - block_queue
+  - blockchain adaptation
+  - block certification
 
+: 자바 스레드풀
 2/6 - 6차 회의 예정
 
 2/13 - 7차 회의 예정
