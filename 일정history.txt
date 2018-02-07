@@ -45,9 +45,9 @@
   - block_queue
   - block adaptation
   - block certification
-
 : 자바 스레드풀
-2/6 - 6차 회의 예정
+
+2/8 - 6차 회의 예정
 
 2/13 - 7차 회의 예정
 : 발표 자료 만들기
