@@ -1,20 +1,20 @@
 << JAVA GUI >>
 
-* Window Builder 설치 *
-
-: Eclipse 실행 -> Help - Install New Software 클릭 -> Add 클릭 
--> Name 입력(ex. Window Builder) & Location "http://download.eclipse.org/windowbuilder/WB/integration/4.5/" 입력 - OK 클릭
--> 체크박스 클릭 -> Next 클릭-> Next 클릭-> I accept ~ & Finish클릭 -> Restart Now
-
-//: Eclipse 실행 -> New - Project 클릭 -> Window Builder
-
-=========================================================================
-
 + 현재 시스템시간 출력(시계)
 + 패널, 버튼, 레이블 등의 컴포넌트 배치
-
----------------구현-----------------
 
 - 컴포넌트 수정
 - 버튼 클릭시 이벤트 처리(새 프레임 생성)
 - 시간동기화 버튼 구현
+
+========================================================================================================================================
+* Window Builder 설치 *
+
+: Eclipse 실행 -> Help - Install New Software 클릭 -> Add 클릭 ->
+  -> Name 입력(ex. Window Builder) & Location "http://download.eclipse.org/windowbuilder/WB/integration/4.5/" 입력 - OK 클릭 ->
+  -> 체크박스 클릭 -> Next 클릭-> Next 클릭-> I accept ~ & Finish 클릭 -> Restart Now
+
+: Eclipse 실행 -> New - Project 클릭 -> Project 이름(또는 src폴더) 우클릭 -> New - Other 클릭 ->
+  -> WindowBuilder - Swing Designer - Application Window 클릭 ->  Java class 생성, Source/Design 창 둘다 사용가능
+
+=======================================================================================================================================  
