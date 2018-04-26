@@ -336,6 +336,7 @@ public class TimeStack{
 				RadioButtonS1_1_1.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent arg0) {
 						/**시간 동기화 수행*/
+						tr.timereceive();
 						tr.timesynchronize();
 						label3.setText("동기화 되었습니다.");
 						RadioButtonS1_1_1.setForeground(Color.BLACK);
