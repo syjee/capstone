@@ -56,6 +56,7 @@ public class TimeReception implements TimeServer{
 			System.out.println("clock_offset(ms) = " + offsetValue);
 			System.out.println("get Time from ( " + timeServer+" )");//+" : "+time
 			
+			client.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
